@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: transparent;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+}
+
+#conteudo{
+    text-align: center;
+    padding: 100px;
+    flex: 1;
+}
+
+#conteudo article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+aside{
+    padding: 20px;
+    flex: 2;
+}
+
+footer{
+    padding: 40px;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 700px){
+    #container{
+        flex-direction: column;
+    }
+    #conteudoAside{
+        display:flex;
+        flex-grow: 1;
+    }
+    #conteudo{
+        flex: 2;
+    }
+    aside{
+        flex: 1;
+    }
+
+}
