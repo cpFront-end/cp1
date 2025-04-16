@@ -1,147 +1,167 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: transparent;
 }
 
-#container{
+#container {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
 }
 
-header{
+#imagem_article {
+    margin: 0;
+    padding: 0;
+}
+
+header {
     text-align: center;
     padding: 20px;
 }
 
-#conteudo{
+#conteudo {
     text-align: center;
     padding: 100px;
     flex: 1;
 }
 
-#conteudo article{
+#conteudo article {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-aside{
+aside {
     padding: 20px;
     flex: 2;
 }
 
-footer{
+footer {
     padding: 40px;
 }
 
 /*FOOTER*/
-footer{
+footer {
     background: #fff;
     color: #666;
     padding: 20px 0;
     margin-top: auto;
 }
-.contato{
+
+.contato {
     display: grid;
     justify-content: space-around;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
     margin: 0 auto;
 }
-.footer-content h3{
+
+.footer-content h3 {
     margin-bottom: 30px;
 }
 
-.footer-content ul{
+.footer-content ul {
     list-style: none;
     padding: 0;
 }
-.footer-content li{
+
+.footer-content li {
     margin-bottom: 5px;
 }
-.footer-content a{
+
+.footer-content a {
     color: #666;
     text-decoration: none;
 }
 
-.redesSociais{
+.redesSociais {
     display: grid;
     justify-content: space-around;
     max-width: 100%;
     margin: 0% auto;
 }
-.redesSociais ul{
+
+.redesSociais ul {
     list-style: none;
     padding: 0;
 }
-.redesSociais li{
+
+.redesSociais li {
     margin-bottom: 5px;
 }
-.redesSociais li{
-    margin: 10px;
-}
-.redesSociais li{
+
+.redesSociais li {
     margin: 10px;
 }
 
-.Vinharia-Agnello{
-    display: grid;
-    justify-content: space-around;
-    max-width: 100%;
-    margin: 0 auto;
+.redesSociais li {
+    margin: 10px;
 }
-.Vinharia-Agnello h3{
-    margin-bottom: 30px;
-}
-.ajuda{
-    display: grid;
-    justify-content: space-around;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.ajuda h3{
-    margin-bottom: 30px;
-}
-.nossosVinhos{
+
+.Vinharia-Agnello {
     display: grid;
     justify-content: space-around;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.direitos{
+.Vinharia-Agnello h3 {
+    margin-bottom: 30px;
+}
+
+.ajuda {
+    display: grid;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.ajuda h3 {
+    margin-bottom: 30px;
+}
+
+.nossosVinhos {
+    display: grid;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.direitos {
     margin-top: 20px;
     font-size: 14px;
     color: #666;
-  }
+}
 
 /* RESPONSIVIDADE */
 
-@media (min-width: 700px){
-    #container{
+@media (min-width: 700px) {
+    #container {
         flex-direction: column;
     }
-    #conteudoAside{
-        display:flex;
+
+    #conteudoAside {
+        display: flex;
         flex-grow: 1;
     }
-    #conteudo{
+
+    #conteudo {
         flex: 2;
     }
-    aside{
+
+    aside {
         flex: 1;
     }
 
