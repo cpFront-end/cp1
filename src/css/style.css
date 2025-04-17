@@ -11,11 +11,103 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+}
+
+
+header{
+    background: #1c1c1c;
+    color:#fff;
+    padding: 0;
+    margin: 0;
+}
+
+.container-store-navbar{
+    display: flex;
+    background: #801e2b;
+    align-items: center;
+}
+.whatsapp-link{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0;
+}
+.whatsapp-link li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px;
+}
+.whatsapp-link li a:hover{
+    text-decoration: underline;
+}
+
+.top-navbar{
+    display: flex;
+    list-style: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    gap: 20px;
+}
+.top-navbar li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Brandon Grotesque',sans-serif;
+    font-size: 12px;
+}
+.top-navbar li a:hover{
+    color: #bdb3b3;
+    
+}
+
+.header-content{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    display: flex;
+    width: 150px;
+    padding: 5px;
+    margin: 13px 30px;
+}
+
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+header nav ul li a{
+    color: #bdbdbd;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: 'Brandon Grotesque',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+header nav ul li a:hover{
+    color: #801e2b;
 }
 
 /*article*/
+
+#imagem_article img {
+    display: flex;
+    width: 100%;
+}
 
 .produtos-container {
     display: flex;
