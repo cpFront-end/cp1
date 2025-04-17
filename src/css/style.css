@@ -13,18 +13,21 @@ body {
     flex-direction: column;
 }
 
-
 header{
     background: #1c1c1c;
     color:#fff;
-    padding: 0;
-    margin: 0;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
 }
 
 .container-store-navbar{
     display: flex;
+    justify-content: space-between;
     background: #801e2b;
     align-items: center;
+    margin: 0;
 }
 .whatsapp-link{
     display: flex;
@@ -61,15 +64,44 @@ header{
     font-family: 'Brandon Grotesque',sans-serif;
     font-size: 12px;
 }
+
+/* 
+padding: 0 20px;
+width: 100%;
+.search-box{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+}
+.search-box input{
+    width: 100%; 
+    .icons{
+    display: flex;
+    gap: 20px;
+}
+.icons img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.icons img:hover{
+    opacity: 1;
+}*/
+
 .top-navbar li a:hover{
     color: #bdb3b3;
-    
 }
 
 .header-content{
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
 }
 .logo img{
     display: flex;
@@ -77,6 +109,55 @@ header{
     padding: 5px;
     margin: 13px 30px;
 }
+
+.search-box{
+    background: #555;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+}
+.search-box input{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+.search-box input::placeholder{
+    color: #ccc;
+}
+.search-box img{
+    color: #ccc;
+    width: 20px;
+    cursor: pointer;
+    /* font-size: 18px;
+    margin-left: 10px; */
+}
+
+.account-actions{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+.icons img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.icons img:hover{
+    opacity: 1;
+}
+
 
 
 header nav ul{
@@ -155,21 +236,15 @@ header nav ul li a:hover{
     display: inline-block;
     margin-top: 8px;
     padding: 8px 16px;
-    background-color: #bb0101;
+    background-color: #b30303;
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .valor a:hover {
     background-color: #801e2b;
 
-}
-
-
-header {
-    text-align: center;
-    padding: 20px;
 }
 
 #conteudo {
@@ -185,29 +260,29 @@ header {
 }
 
 
-
-aside {
-    padding: 20px;
-    flex: 2;
-}
-
-footer {
-    padding: 40px;
-}
-
 /*FOOTER*/
+/* .whatsapp-link{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0;
+}
+.whatsapp-link li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px;
+} */
+
+
 footer {
     background: #fff;
     color: #666;
     padding: 20px 0;
     margin-top: auto;
-}
-
-.contato {
-    display: grid;
-    justify-content: space-around;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 .footer-content {
@@ -221,12 +296,8 @@ footer {
     margin-bottom: 30px;
 }
 
-.footer-content ul {
-    list-style: none;
-    padding: 0;
-}
-
 .footer-content li {
+    list-style: none;
     margin-bottom: 5px;
 }
 
@@ -235,28 +306,18 @@ footer {
     text-decoration: none;
 }
 
+.contato {
+    display: grid;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .redesSociais {
     display: grid;
     justify-content: space-around;
     max-width: 100%;
     margin: 0% auto;
-}
-
-.redesSociais ul {
-    list-style: none;
-    padding: 0;
-}
-
-.redesSociais li {
-    margin-bottom: 5px;
-}
-
-.redesSociais li {
-    margin: 10px;
-}
-
-.redesSociais li {
-    margin: 10px;
 }
 
 .Vinharia-Agnello {
@@ -289,7 +350,7 @@ footer {
 }
 
 .direitos {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
     color: #666;
     text-align: center;
@@ -309,10 +370,6 @@ footer {
 
     #conteudo {
         flex: 2;
-    }
-
-    aside {
-        flex: 1;
     }
 
 }
