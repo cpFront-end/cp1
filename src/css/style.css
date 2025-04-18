@@ -397,6 +397,10 @@ footer {
 }
 
 @media (max-width: 480px){
+    header{
+        position: static;
+    }
+
     .container-store-navbar{
         flex-direction: column;
         padding: 5px;
@@ -427,5 +431,13 @@ footer {
     }
     nav a{
         font-size: 11px;
+    }
+
+    .texto-categorias{
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        white-space: normal;
+        word-break: normal;
     }
 }
