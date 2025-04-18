@@ -76,6 +76,7 @@ header{
     padding: 0 20px;
     width: 100%;
     position: relative;
+    flex-wrap: wrap;
 }
 .logo {
     flex: 0 0 auto;
@@ -165,6 +166,10 @@ header nav ul li a:hover{
 #imagem_article img {
     display: flex;
     width: 100%;
+}
+
+#conteudoArticle{
+    padding-top: 180px;
 }
 
 .categorias{
@@ -357,20 +362,13 @@ footer {
     .account-actions{
         order: 2;
     }
+    #imagem_article{
+        display: none;
+    }
 }
 
 
 @media (max-width: 768px){
-    /* .container-store-navbar{
-        flex-direction: column;
-        padding: 5px;
-    }
-    .whatsapp-link, .top-navbar{
-        justify-content: center;
-        width: 100%;
-        padding: 5px 0;
-    }  CORRIGIR NO CELULAR*/
-
     .logo img{
         width: 120px;
     }
@@ -399,6 +397,16 @@ footer {
 }
 
 @media (max-width: 480px){
+    .container-store-navbar{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .whatsapp-link, .top-navbar{
+        justify-content: center;
+        width: 100%;
+        padding: 5px 0;
+    }
+
     .logo img{
         width: 100px;
     }
@@ -407,11 +415,13 @@ footer {
         height: 17px;
     }
     .search-box{
-        width: 200px;
+        /* width: 200px; */
+        width: 100%;
     }
     .search-box input{
         font-size: 12px;
     }
+
     nav ul{
         gap: 8px;
     }
