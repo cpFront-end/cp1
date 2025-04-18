@@ -434,10 +434,9 @@ footer {
     }
 
     .texto-categorias{
-        max-width: 90%;
-        text-align: center;
-        margin: 0 auto;
-        white-space: normal;
-        word-break: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
     }
 }
